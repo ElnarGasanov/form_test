@@ -1,10 +1,13 @@
 import React, {useEffect, useState} from 'react';
+
 import Modal from "./Modal/Modal";
-import image_popup from "./image/open_popup.png";
-import image_popup_close from "./image/close_popup.png"
 import {FormControl, InputLabel, MenuItem, Select, Switch} from "@mui/material";
 import { Formik } from 'formik';
 import * as yup from "yup"
+
+import image_popup from "./image/open_popup.png";
+import image_popup_close from "./image/close_popup.png"
+
 
 function App() {
   //modal
@@ -54,6 +57,7 @@ function App() {
     lastName: yup.string().typeError("Должно быть строкой").required("Обязательная поле ввода!"),
     email: yup.string().email("Введите верный EMAIL").required("Обязательная поле ввода!")
   })
+
   return (
       <div className="App">
         <main>
@@ -115,7 +119,7 @@ function App() {
             <p>Product type *</p>
             <FormControl sx={{ width:"300px"}}>
               <InputLabel id="demo-simple-select-label">plus</InputLabel>
-              <Select
+              <Select className={classes.select}
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
                   value={product}
