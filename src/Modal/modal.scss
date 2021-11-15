@@ -47,7 +47,7 @@
   }
 }
 
-.title{
+.title {
   margin: 10px 0 10px 0;
 }
 
@@ -55,6 +55,13 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+
+  span{
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+  }
 
   input {
     margin-bottom: 3px;
@@ -78,43 +85,34 @@
   justify-content: space-between;
 }
 
-.switches{
+.switches {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  p{
+  p {
     margin: 5px 0 5px 0;
   }
 }
 
-.textArea{
+.textArea {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
 
-  textarea{
+  textarea {
     padding: 10px;
     resize: none;
   }
 }
 
-.totalPriceBlock{
+.totalPriceBlock {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.validation_input{
-  span{
-    margin-bottom: 10px;
-
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.error{
+.error {
   margin: 0;
   font-size: 10px;
   color: red;
